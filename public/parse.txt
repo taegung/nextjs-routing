@@ -77,3 +77,5 @@
 
     -> 최상단에 components/라는 폴더 생성 후 line-chart.jsx를 해당 폴더로 이동하여 구분하기
     목적에 따라, 세분화 정도에 따라 dashboard와 관련된 컴포넌트들은 components/dashboard/로 정리할 수도 있음
+
+#9 숨김 폴더 활용하기
