@@ -113,3 +113,14 @@
     해당 라우트에 적용될 레이아웃 구성할 때 사용
 
     추후 <header>, <footer> 역시 별도의 UI 컴포넌트로 작성하여 app/layout.jsx에 import할 수도 있음
+
+#12. 중첩 레이아웃 구성하기
+
+    개별 Product 상세 페이지에 별도의 레이아웃을 추가하고 싶은 경우,
+    -> products/[productId]/layout.jsx 생성
+
+    [productId]/하단에 생성하였기 때문에 lh:3-/products에는 레이아웃이 적용되지 않지만,
+    lh:3-/products/1, 2와 같은 페이지에는 레이아웃이 추가 적용되었음
+
+    app/layout.js의 children이 products/[productId]/layout.js 파일을 렌더링함
+    즉, children을 타고 내려가면서 렌더링이 진행됨
