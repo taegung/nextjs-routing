@@ -12,7 +12,12 @@ const ProductList = () => {
             <h2>
                 <Link href="products/2">Product 2</Link>
             </h2>
-        
+            {/* Array.map()을 통해 동적으로 렌더링 */}
+            {productList.map(productId => (
+                <h2 key={productId}>
+                    <Link href={`products/${productId}`}>Product {productId}</Link>
+                </h2>
+            ))}
         </div>
     );
 }
