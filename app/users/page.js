@@ -3,7 +3,7 @@ export default async function UsersPage() {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await response.json();
     console.log(users);
-    await new Promise((resolve) => setTimeout(resolve, 1000)); 
+   //await new Promise((resolve) => setTimeout(resolve, 1000)); 
     
     return (
         <div className="grid grid-cols-2 gap-2 p-4">

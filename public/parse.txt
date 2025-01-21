@@ -139,3 +139,17 @@
 #16 로딩 UI 적용하기
 
 #17 에러 처리하기 
+
+
+#19 fetch().js의 Native fetch()를 통한 캐쉬
+
+json-server 라는 모듈 설치
+npm install json-server@0.17.4 --save-dev
+
+dat.json 파일 생성(실습에 활용할 json 데이터)
+
+json-server 모듈로 json 서버 구성하기
+
+
+json 서버 실행
+node server
