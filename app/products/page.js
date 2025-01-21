@@ -18,6 +18,11 @@ const ProductList = () => {
                     <Link href={`products/${productId}`}>Product {productId}</Link>
                 </h2>
             ))}
+
+            {/* {productList.map(productId =>(
+               <h2 key={productId}> <Link href={`products/${productId}'}> </Link>  </h2>
+            ))} 
+             */}
         </div>
     );
 }
